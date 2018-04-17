@@ -1,0 +1,28 @@
+Virtustream Fibonacci Generator Server
+by: Cyprien Mvuanda
+cyptm@hotmail.com
+
+
+This Virtustream Fibonacci Sequence generator can be run as a standalone application or installed as a systemd service.
+THe virtustream_env python environment directory is used for the server and test and should not be removed.
+
+-- Setting up the service
+Run setup_fib_server.sh
+> ./setup_fib_server.sh
+
+This should setup the systemd service. The service will automatically restart in case of failure. 
+You can manually start|stop|restart the server by issing the command "systemctl start|stop|restart fib_server"
+
+
+-- Running as standalone
+run server.py
+> ./server.py
+
+-- Testing
+run test_fib.py
+> ./test_fib.py
+
+
+-- Logging/Debugging
+Log files are currently written to fib_server.log
+

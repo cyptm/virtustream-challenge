@@ -1,0 +1,13 @@
+[Unit]
+Description=The Virtustream Fibonacci sequence generator server
+After=network.target
+
+
+[Install]
+WantedBy=default.target
+
+
+[Service]
+Type=simple
+TimeoutStartSec=0
+Restart=on-failure
