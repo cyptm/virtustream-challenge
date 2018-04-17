@@ -24,5 +24,6 @@ run test_fib.py
 
 
 -- Logging/Debugging
-Log files are currently written to fib_server.log
+Log files are currently written to fib_server.log when ran as standalone. 
+Otherwise, use journalctl to view the systemd logs
 
