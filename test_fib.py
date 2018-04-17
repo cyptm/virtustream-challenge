@@ -23,6 +23,15 @@ class FibTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         seq = json.loads(response.data)
         self.assertEqual(seq, test_seq)
-            
+
+    def test_fib_2(self):
+        test_seq = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+        response = self.app.get('/fib/10', follow_redirects=True)
+
+        self.assertEqual(response.status_code, 200)
+        seq = json.loads(response.data)
+        self.assertEqual(seq, test_seq)
+
+
 if __name__ == "__main__":
     unittest.main()

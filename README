@@ -18,6 +18,14 @@ You can manually start|stop|restart the server by issing the command "systemctl 
 run server.py
 > ./server.py
 
+
+Now for the fun part!!!!!!
+
+-- Generating the first N fibonacci numbers
+Access http://localhost:5000/fib/N
+where N is a number 
+
+
 -- Testing
 run test_fib.py
 > ./test_fib.py
